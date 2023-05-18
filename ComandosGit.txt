@@ -1,0 +1,52 @@
+============================= Guia de Git =============================
+[1]  apt-get install git
+Instalar git en el equipo.
+
+[2]  git --version
+Ver la versión actual que tenemos instalada
+
+[3]  git init
+Crea una carpeta oculta para inicializar el repositório. La carpeta ".git" se creará desde la ruta actual donde estás.
+
+[4]  git config --global user.name “nombreDeUsuario”
+Asignas un nombre de usuario al equipo local.
+
+[5]  git config --global user.email “correoElectronico”
+Asignas un correo electronico al equipo local.
+
+[6]  git config --list
+Ver la configuración actual de git.
+
+[7]  git status
+Ver el estado del repositorio, la rama donde el mismo está y los commits.
+
+[8]  git add .
+Indicas los archivos que vas a commitear. Para posteriormente hacer el commit con todo indicado. 
+
+Note:	El "." es para indicar la dirección actual, el sitio/directorio actual donde estás. 
+		Este comando a nivel interfaz gráfico es el proceso anterior a push, que seleccionas 
+		los archivos que quieres que se afecten, que tocaste/cambiaste código.
+		Entonces antes de subirse al repo se necesita indicar que archivos quieres que se suban o cambien, 
+		este comando se encarga de hacer ese proceso, esa "indicación", para posteriormente poder realizar
+		commit y, si desea subir los comandos con push.
+
+[9]  git commit -m "comentario"
+Hacer commit de los archivos que acabas de añadir al stagging area. Una vez hecho la "indicación" de esos archivos según lo indicado en el Staging Area, el commit irá trabajar apuntando hacia esos archivos, con el comentario que el usuario añadió.
+
+[10] git branch
+Crear una nueva rama en el repositorio
+
+[11] git branch -M main
+El parámetro "-M" indica que vamos a renombrar una rama, seguido del segundo parametro "NombreDeLaRama".
+
+[12] git remote add "identificador" "UrlDelRepositorio"
+Crear un nuevo repositorio remoto, crea una "cópia" donde permite que utilizes tu codigo con otros colaboradores, ya que este permite realizar una comunicación con la nube.
+
+[13] git remote
+[14] git remote set-url "identificador" "UrlNueva"
+[15] git remote rename "IdentificadorNuevo" "IdentificadorViejo"
+[16] git push -u "identificador" "rama"
+[17] git log
+[18] git "comando" -h
+[19] git "comando" --help
+=======================================================================
